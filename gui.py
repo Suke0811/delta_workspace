@@ -32,12 +32,12 @@ def reset_workspace():
 
 # --- Sidebar: Configuration Parameters ---
 st.sidebar.header("1. Robot Geometry")
-la = st.sidebar.slider("La (Upper Arm) [m]", 0.1, 1.0, 0.25, step=0.01)
-lb = st.sidebar.slider("Lb (Forearm) [m]", 0.1, 1.0, 0.4, step=0.01)
-rm = st.sidebar.slider("rm (Platform Radius) [m]", 0.01, 0.2, 0.05, step=0.005)
-rf = st.sidebar.slider("Rf (Base Radius) [m]", 0.01, 0.2, 0.05, step=0.005)
+la = st.sidebar.slider("La (Upper Arm) [m]", 0.01, 1.0, 0.25, step=0.01)
+lb = st.sidebar.slider("Lb (Forearm) [m]", 0.01, 1.0, 0.4, step=0.01)
+rm = st.sidebar.slider("rm (Platform Radius) [m]", 0.0, 0.2, 0.05, step=0.005)
+rf = st.sidebar.slider("Rf (Base Radius) [m]", 0.0, 0.2, 0.05, step=0.005)
 rr = st.sidebar.slider("Rr (Base Offset) [m]", 0.0, 0.2, 0.1, step=0.005)
-lext = st.sidebar.slider("L_EXT (Extension) [m]", 0.0, 1.0, 0.5, step=0.01)
+lext = st.sidebar.slider("L_EXT (Extension) [m]", 0.01, 1.0, 0.5, step=0.01)
 
 st.sidebar.header("2. Limb Orientations (θ)")
 th1 = st.sidebar.number_input("Theta 1 [deg]", value=60.0)
